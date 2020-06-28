@@ -1,14 +1,11 @@
-let numbers = prompt('Введите числа через запятую').split(',');
-let arr = +numbers[0];
-let sum = 0;
+let age = prompt('Please, enter your age');
+console.log(age);
+let experience = prompt('How old is the experience?');
+let degree = prompt('What is your education?')
 
-for (let i = 0; i < numbers.length; i++) {
-    sum = (sum + parseInt(numbers[i]));
-}
-
-console.log('Среднее арифметическое массива ' + sum / numbers.length);
-
-
+age >= 30 && experience >= 3 && degree === 'higher education' || degree === 'master' ?
+    alert('You are accepted') :
+    alert('You do not suit us');
 
 
 
